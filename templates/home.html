@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>ChooseCRM</title>
+</head>
+<body>
+
+
+<div class="card">
+
+    <header class="card-header" style="background-image: url('templates/1511.jpg')">
+        <h5 class="card-title">Автоматизация фронт-офиса</h5>
+    </header>
+        <main class="card-body">
+            <form action="/home/" method="post">
+                {% csrf_token %}
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                  amoCRM
+                </button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+                    Bitrix24
+                </button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+                  MegaPlan
+                </button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">
+                  RetailCRM
+                </button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal5">
+                  FreshOffice
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Описание amoCRM</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        #2 в 10 лучших CRM-систем для малого бизнеса в России
+                          <p><p>
+                        amoCRM — это система, которой можно пользоваться без установки и с мобильных приложений. В системе можно заводить контакты, следить за сделками, распределять встречи и выполнять различные задачи.
+                          <p><p>
+                        Изначально amoCRM можно напоминать записную книжку, поскольку её интерфейс существенно проще аналогичных CRM-систем. Помимо этого, amoCRM тесно интегрируется с вашим сайтом и аналитикой: настройте форму, установите её на сайте, каждое оформление превращается в сделку, она уже содержит данные из Google.Analytics, далее ставятся новые задачи и тем самым вам доступна вся воронка онлайн-продаж.
+                           <p><p>
+                          Имеется 14-дневный пробный период. Сервис стоит от 500 рублей в месяц (за пользователя)
+
+                      </div>
+                      <div class="modal-footer">
+                          <a class="btn btn-primary" href="https://www.amocrm.ru" target="_blank" role="button">Подробнее</a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <script>
+                    $('#exampleModal').modal({
+                      keyboard: false
+                    })
+                </script>
+
+
+
+
+                <div class="col-md-4 mb-2">
+                    <h5 for="validationCustom01">Отрасль</h5>
+                    <select class="custom-select" id="validationCustom01">
+                        <option selected>Выберите отрасль</option>
+                        <option value="1">Строительство</option>
+                        <option value="2">Государственные услуги</option>
+                        <option value="3">Розничная торговля</option>
+                        <option value="4">Логистика</option>
+                        <option value="5">СМИ</option>
+                        <option value="6">Другое</option>
+                    </select>
+                </div>
+
+                <div class="alert alert-dark col-sm-8" role="alert">
+                    Отметьте значимость критерия при выборе автоматизированного решения от 1 до 10, где 1 - не значимый,
+                    10 - самый значимый критерий при выборе
+                </div>
+
+                <div class="row">
+                    <legend class="col-form-label col-sm-7 pt-0">Управление лояльностью клиентов</legend>
+                    <div class="col-sm-1">
+                        <select class="custom-select" name="mark_1" id="validationCustom02">
+
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <legend class="col-form-label col-sm-7 pt-0">Автоматизированная система оповещений менеджера
+                    </legend>
+                    <div class="col-sm-1">
+                        <select class="custom-select" name="mark_2" id="validationCustom03">
+
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <legend class="col-form-label col-sm-7 pt-0">Возможность хранения и обработки файлов</legend>
+                    <div class="col-sm-1">
+                        <select class="custom-select" name="mark_3" id="validationCustom04">
+
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <legend class="col-form-label col-sm-7 pt-0">Автоматизация работы с лидами</legend>
+                    <div class="col-sm-1">
+                        <select class="custom-select" name="mark_4" id="validationCustom05">
+
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <legend class="col-form-label col-sm-7 pt-0">Возможность отслеживать этапы и конверсию по ним
+                    </legend>
+                    <div class="col-sm-1">
+                        <select class="custom-select" name="mark_5" id="validationCustom06">
+
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <legend class="col-form-label col-sm-7 pt-0">Работа над сегментацией клиентов (лиды, постоянные
+                        клиенты, поставщики, партнеры)
+                    </legend>
+                    <div class="col-sm-1">
+                        <select class="custom-select" name="mark_6" id="validationCustom07">
+
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <legend class="col-form-label col-sm-7 pt-0">Виды техподдержки пользователей (активное сообщество,
+                        форум, электронная почта, служба помощи, телефоны, wiki)
+                    </legend>
+                    <div class="col-sm-1">
+                        <select class="custom-select" name="mark_7" id="validationCustom08">
+
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <legend class="col-form-label col-sm-7 pt-0">Доступность технической поддержки</legend>
+                    <div class="col-sm-1">
+                        <select class="custom-select" name="mark_8" id="validationCustom09">
+
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <legend class="col-form-label col-sm-7 pt-0">Стоимость системы</legend>
+                    <div class="col-sm-1">
+                        <select class="custom-select" name="mark_9" id="validationCustom10">
+
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <legend class="col-form-label col-sm-7 pt-0">Наличие бесплатного тарифа</legend>
+                    <div class="col-sm-1">
+                        <select class="custom-select" name="mark_10" id="validationCustom11">
+
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="submit" value="Подобрать решение">
+            </form>
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ansModal">
+                  Подобрать решение
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Описание amoCRM</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Решение: {{ CRM }}
+                      </div>
+                      <div class="modal-footer">
+                          <a class="btn btn-primary" href="https://www.amocrm.ru" target="_blank" role="button">Подробнее</a>
+
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <script>
+                function AJAX_ans(args) {
+                $.ajax({
+                    type: "POST",
+                    url: "/collect_data/",
+                    dataType: "json",
+
+                    error: function () {
+                        console.log("При выполнении запроса произошла ошибка :(");
+                    },
+                    success: function(args) {
+                        print()
+
+                        }
+                    }
+                    })
+                }
+            </script>
+
+            <hr class="my-4">
+            <form class="needs-validation" novalidate>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Я прочитал и согласен с условиями использования системы
+                        </label>
+                        <div class="invalid-feedback">
+                            Согласитесь.
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function () {
+                    'use strict';
+                    window.addEventListener('load', function () {
+                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                        var forms = document.getElementsByClassName('needs-validation');
+                        // Loop over them and prevent submission
+                        var validation = Array.prototype.filter.call(forms, function (form) {
+                            form.addEventListener('submit', function (event) {
+                                if (form.checkValidity() === false) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                            }, false);
+                        });
+                    }, false);
+                })();
+            </script>
+
+
+        </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
